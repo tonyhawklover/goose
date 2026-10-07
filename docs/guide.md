@@ -11,7 +11,7 @@
 Each profile has its own unlock method.
 
 - **Tag or QR:** lock and unlock by scanning an NFC tag or a QR code. Keep it somewhere you'd have to get up to reach. This is the most effective option.
-- **Timer:** block for a set time, from 15 minutes to 8 hours. You can't unlock early, and apps unblock on their own when time is up, even if Goose is closed.
+- **Timer:** block for any set time, from a minute to a whole day. You can't unlock early, and apps unblock on their own when time is up, even if Goose is closed.
 - **Button:** lock and unlock with a tap. A gentle reminder rather than a hard block.
 
 ## Tags and QR codes

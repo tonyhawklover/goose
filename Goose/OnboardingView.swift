@@ -122,13 +122,10 @@ struct OnboardingView: View {
             }
 
             if method == .timer {
-                Picker("Block for", selection: $timerMinutes) {
-                    ForEach(Profile.timerChoices, id: \.self) { minutes in
-                        Text(formatMinutes(minutes)).tag(minutes)
-                    }
-                }
-                .pickerStyle(.menu)
-                .tint(.white)
+                DurationWheel(minutes: $timerMinutes)
+                    .frame(height: 120)
+                    .clipped()
+                    .environment(\.colorScheme, .dark)
             }
 
             primaryButton(method == .key ? "Continue" : "Done", filled: true) {
@@ -139,6 +136,7 @@ struct OnboardingView: View {
                     onFinish(nil)
                 }
             }
+            .disabled(method == .timer && timerMinutes < 1)
             .padding(.top, 6)
         }
     }

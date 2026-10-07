@@ -141,7 +141,7 @@ struct ProfileFormView: View {
             .navigationBarItems(
                 leading: Button("Cancel", action: onDismiss),
                 trailing: Button("Save", action: handleSave)
-                    .disabled(profileName.isEmpty)
+                    .disabled(profileName.isEmpty || (unlockMethod == .timer && timerMinutes < 1))
             )
             .sheet(isPresented: $showSymbolsPicker) {
                 SymbolsPicker(selection: $profileIcon, title: "Pick an icon", autoDismiss: true)
@@ -235,11 +235,7 @@ struct UnlockMethodSection: View {
             .pickerStyle(.segmented)
 
             if method == .timer {
-                Picker("Block for", selection: $timerMinutes) {
-                    ForEach(Profile.timerChoices, id: \.self) { minutes in
-                        Text(formatMinutes(minutes)).tag(minutes)
-                    }
-                }
+                DurationWheel(minutes: $timerMinutes)
             }
         } header: {
             Text("Unlock With")
@@ -254,5 +250,32 @@ struct UnlockMethodSection: View {
         case .timer: return "Block for a set time. You can't unlock early, and apps unblock on their own when time is up."
         case .button: return "Lock and unlock with a tap. A gentle reminder rather than a hard block."
         }
+    }
+}
+
+/// Hours and minutes, for timers and daily limits. Anything from a minute up
+/// to a day.
+struct DurationWheel: View {
+    @Binding var minutes: Int
+
+    private var hours: Binding<Int> {
+        Binding { minutes / 60 } set: { minutes = $0 * 60 + minutes % 60 }
+    }
+
+    private var remainder: Binding<Int> {
+        Binding { minutes % 60 } set: { minutes = (minutes / 60) * 60 + $0 }
+    }
+
+    var body: some View {
+        HStack(spacing: 0) {
+            Picker("Hours", selection: hours) {
+                ForEach(0..<24, id: \.self) { Text("\($0) hr").tag($0) }
+            }
+            Picker("Minutes", selection: remainder) {
+                ForEach(0..<60, id: \.self) { Text("\($0) min").tag($0) }
+            }
+        }
+        .pickerStyle(.wheel)
+        .frame(height: 150)
     }
 }

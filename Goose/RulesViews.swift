@@ -350,14 +350,6 @@ private struct LimitEditor: View {
         _limit = State(initialValue: limit)
     }
 
-    private var hours: Binding<Int> {
-        Binding { limit.minutes / 60 } set: { limit.minutes = $0 * 60 + limit.minutes % 60 }
-    }
-
-    private var minutes: Binding<Int> {
-        Binding { limit.minutes % 60 } set: { limit.minutes = (limit.minutes / 60) * 60 + $0 }
-    }
-
     /// Hitting the limit away from the tag means staying locked until midnight.
     private var needsKey: Bool {
         profileManager.profiles.first { $0.id == limit.profileID }?.unlockMethod == .key
@@ -389,16 +381,7 @@ private struct LimitEditor: View {
                 }
 
                 Section {
-                    HStack(spacing: 0) {
-                        Picker("Hours", selection: hours) {
-                            ForEach(0..<24, id: \.self) { Text("\($0) hr").tag($0) }
-                        }
-                        Picker("Minutes", selection: minutes) {
-                            ForEach(0..<60, id: \.self) { Text("\($0) min").tag($0) }
-                        }
-                    }
-                    .pickerStyle(.wheel)
-                    .frame(height: 150)
+                    DurationWheel(minutes: $limit.minutes)
                 } header: {
                     Text("Allowed Each Day")
                 } footer: {

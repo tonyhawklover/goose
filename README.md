@@ -11,7 +11,7 @@ Goose uses Apple's Screen Time APIs to block the apps you choose. The strongest 
 - **Quick setup:** first launch asks what to block and how to unlock, and that's it.
 - **Unlock methods, per profile:**
   - **Tag or QR:** scan an NFC tag or a QR code you made in the app.
-  - **Timer:** block for 15 minutes to 8 hours. No ending early.
+  - **Timer:** block for any length of time, up to a day. No ending early.
   - **Button:** lock and unlock with a tap, as a gentle reminder.
 - **Profiles:** different sets of blocked apps, categories and websites, each with its own unlock method.
 - **Schedules:** lock a profile automatically, like every night or during work hours, and unlock it when the schedule ends. Works even when Goose is closed. You can still unlock early the profile's usual way.

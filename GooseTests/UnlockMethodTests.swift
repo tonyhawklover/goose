@@ -48,8 +48,8 @@ struct TimerWindowTests {
         #expect(TimerWindow.monitoringStart(endingAt: end, now: now) == now)
     }
 
-    @Test func everyTimerChoiceMeetsTheMinimum() {
-        for minutes in Profile.timerChoices {
+    @Test func anyTimerLengthMeetsTheMinimum() {
+        for minutes in [1, 5, 14, 15, 16, 30, 60, 8 * 60, 24 * 60 - 1] {
             let end = now.addingTimeInterval(TimeInterval(minutes * 60))
             let start = TimerWindow.monitoringStart(endingAt: end, now: now)
             #expect(end.timeIntervalSince(start) >= TimerWindow.minimumLength)

@@ -152,7 +152,6 @@ struct Profile: Identifiable, Codable {
     var unlockMethod: UnlockMethod
     var timerMinutes: Int
 
-    static let timerChoices = [15, 30, 45, 60, 90, 120, 180, 240, 480]
 
     init(
         name: String,
