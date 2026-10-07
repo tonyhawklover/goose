@@ -1,0 +1,16 @@
+// Goose.xcconfig
+//
+// Signing and identifiers for all three targets (app, shield, widget).
+// Don't put your own values here. Copy Local.xcconfig.example to
+// Local.xcconfig (git-ignored) and set them there.
+
+// Your Apple Developer Team ID (Xcode → Settings → Accounts).
+GOOSE_TEAM_ID =
+
+// Base bundle ID. Extensions append .GooseShield / .GooseWidget, and the
+// App Group is group.<this>.
+GOOSE_BUNDLE_ID = com.example.goose
+
+GOOSE_APP_GROUP = group.$(GOOSE_BUNDLE_ID)
+
+#include? "Local.xcconfig"

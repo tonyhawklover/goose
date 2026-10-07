@@ -1,0 +1,1136 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		25DF3A2F306AF1DA002CBBD8 /* ManagedSettings.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF3A2E306AF1DA002CBBD8 /* ManagedSettings.framework */; };
+		25DF3A31306AF1DA002CBBD8 /* ManagedSettingsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF3A30306AF1DA002CBBD8 /* ManagedSettingsUI.framework */; };
+		25DF3A39306AF1DA002CBBD8 /* GooseShield.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25DF3A2D306AF1DA002CBBD8 /* GooseShield.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25DF3A45306B06FA002CBBD8 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF3A44306B06FA002CBBD8 /* WidgetKit.framework */; };
+		25DF3A47306B06FA002CBBD8 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF3A46306B06FA002CBBD8 /* SwiftUI.framework */; };
+		25DF3A58306B06FB002CBBD8 /* GooseWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25DF3A43306B06FA002CBBD8 /* GooseWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		25DF3AFA3075CF82002CBBD8 /* DeviceActivity.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 25DF3AF93075CF82002CBBD8 /* DeviceActivity.framework */; };
+		25DF3B023075CF82002CBBD8 /* GooseMonitor.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 25DF3AF83075CF82002CBBD8 /* GooseMonitor.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AA0000000000000000000003 /* GooseShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* GooseShared.swift */; };
+		AA0000000000000000000004 /* GooseShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* GooseShared.swift */; };
+		AA0000000000000000000031 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000030 /* PrivacyInfo.xcprivacy */; };
+		AA0000000000000000000041 /* QRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000040 /* QRCode.swift */; };
+		AA0000000000000000000043 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000042 /* OnboardingView.swift */; };
+		AA0000000000000000000045 /* GooseIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000044 /* GooseIntents.swift */; };
+		AA0000000000000000000046 /* GooseIntents.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000044 /* GooseIntents.swift */; };
+		AA0000000000000000000051 /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000050 /* InfoView.swift */; };
+		AA0000000000000000000053 /* AboutContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000052 /* AboutContent.swift */; };
+		AA0000000000000000000055 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000054 /* LICENSE */; };
+		AA0000000000000000000057 /* guide.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000056 /* guide.md */; };
+		AA0000000000000000000059 /* privacy.md in Resources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000058 /* privacy.md */; };
+		AA0000000000000000000060 /* GooseShared.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000001 /* GooseShared.swift */; };
+		AA0000000000000000000071 /* AddTagSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000070 /* AddTagSheet.swift */; };
+		AA0000000000000000000073 /* QuotesSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000072 /* QuotesSettingsView.swift */; };
+		AA0000000000000000000B01 /* BlockRulesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000B00 /* BlockRulesManager.swift */; };
+		AA0000000000000000000B03 /* RulesViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000B02 /* RulesViews.swift */; };
+		AA0000000000000000000B05 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000B04 /* StatsView.swift */; };
+		AA0000000000000000000B07 /* BlockRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000B06 /* BlockRules.swift */; };
+		AA0000000000000000000B08 /* BlockRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000B06 /* BlockRules.swift */; };
+		F51C38D22C775953003B4EB3 /* CoreNFC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F51C38D02C77594E003B4EB3 /* CoreNFC.framework */; };
+		F51C38D72C775CAF003B4EB3 /* AppBlocker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38D62C775CAF003B4EB3 /* AppBlocker.swift */; };
+		F51C38D92C775CEC003B4EB3 /* NfcReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38D82C775CEC003B4EB3 /* NfcReader.swift */; };
+		F51C38DB2C775D0B003B4EB3 /* GooseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38DA2C775D0B003B4EB3 /* GooseView.swift */; };
+		F51C38E12C77DADA003B4EB3 /* ProfileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38E02C77DADA003B4EB3 /* ProfileManager.swift */; };
+		F51C38E42C77E847003B4EB3 /* SFSymbolsPicker in Frameworks */ = {isa = PBXBuildFile; productRef = F51C38E32C77E847003B4EB3 /* SFSymbolsPicker */; };
+		F51C38E82C78ADB5003B4EB3 /* ProfilePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38E72C78ADB5003B4EB3 /* ProfilePicker.swift */; };
+		F51C38EA2C78B47A003B4EB3 /* ProfileFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F51C38E92C78B47A003B4EB3 /* ProfileFormView.swift */; };
+		F5A3B05F2C733E3400BD6C7F /* GooseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5A3B05E2C733E3400BD6C7F /* GooseApp.swift */; };
+		F5A3B0632C733E3500BD6C7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A3B0622C733E3500BD6C7F /* Assets.xcassets */; };
+		F5A3B0662C733E3500BD6C7F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5A3B0652C733E3500BD6C7F /* Preview Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		25DF3A37306AF1DA002CBBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A3B0532C733E3400BD6C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25DF3A2C306AF1DA002CBBD8;
+			remoteInfo = GooseShield;
+		};
+		25DF3A56306B06FB002CBBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A3B0532C733E3400BD6C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25DF3A42306B06FA002CBBD8;
+			remoteInfo = GooseWidgetExtension;
+		};
+		25DF3B003075CF82002CBBD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A3B0532C733E3400BD6C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25DF3AF73075CF82002CBBD8;
+			remoteInfo = GooseMonitor;
+		};
+		AA0000000000000000000026 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F5A3B0532C733E3400BD6C7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F5A3B05A2C733E3400BD6C7F;
+			remoteInfo = Goose;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		25DF3A3A306AF1DA002CBBD8 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				25DF3A58306B06FB002CBBD8 /* GooseWidgetExtension.appex in Embed Foundation Extensions */,
+				25DF3A39306AF1DA002CBBD8 /* GooseShield.appex in Embed Foundation Extensions */,
+				25DF3B023075CF82002CBBD8 /* GooseMonitor.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		25DF3A2D306AF1DA002CBBD8 /* GooseShield.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GooseShield.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DF3A2E306AF1DA002CBBD8 /* ManagedSettings.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettings.framework; path = System/Library/Frameworks/ManagedSettings.framework; sourceTree = SDKROOT; };
+		25DF3A30306AF1DA002CBBD8 /* ManagedSettingsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ManagedSettingsUI.framework; path = System/Library/Frameworks/ManagedSettingsUI.framework; sourceTree = SDKROOT; };
+		25DF3A43306B06FA002CBBD8 /* GooseWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GooseWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DF3A44306B06FA002CBBD8 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		25DF3A46306B06FA002CBBD8 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		25DF3A5D306B0707002CBBD8 /* GooseWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GooseWidgetExtension.entitlements; sourceTree = "<group>"; };
+		25DF3AF83075CF82002CBBD8 /* GooseMonitor.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = GooseMonitor.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		25DF3AF93075CF82002CBBD8 /* DeviceActivity.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DeviceActivity.framework; path = System/Library/Frameworks/DeviceActivity.framework; sourceTree = SDKROOT; };
+		AA0000000000000000000001 /* GooseShared.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooseShared.swift; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* Goose.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Goose.xcconfig; sourceTree = "<group>"; };
+		AA0000000000000000000020 /* GooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA0000000000000000000030 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		AA0000000000000000000040 /* QRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCode.swift; sourceTree = "<group>"; };
+		AA0000000000000000000042 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000044 /* GooseIntents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooseIntents.swift; sourceTree = "<group>"; };
+		AA0000000000000000000050 /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000052 /* AboutContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutContent.swift; sourceTree = "<group>"; };
+		AA0000000000000000000054 /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE; sourceTree = SOURCE_ROOT; };
+		AA0000000000000000000056 /* guide.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = guide.md; path = docs/guide.md; sourceTree = SOURCE_ROOT; };
+		AA0000000000000000000058 /* privacy.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; name = privacy.md; path = docs/privacy.md; sourceTree = SOURCE_ROOT; };
+		AA0000000000000000000070 /* AddTagSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTagSheet.swift; sourceTree = "<group>"; };
+		AA0000000000000000000072 /* QuotesSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesSettingsView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000B00 /* BlockRulesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRulesManager.swift; sourceTree = "<group>"; };
+		AA0000000000000000000B02 /* RulesViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RulesViews.swift; sourceTree = "<group>"; };
+		AA0000000000000000000B04 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		AA0000000000000000000B06 /* BlockRules.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlockRules.swift; sourceTree = "<group>"; };
+		F51C38D02C77594E003B4EB3 /* CoreNFC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreNFC.framework; path = System/Library/Frameworks/CoreNFC.framework; sourceTree = SDKROOT; };
+		F51C38D52C775AAF003B4EB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F51C38D62C775CAF003B4EB3 /* AppBlocker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppBlocker.swift; sourceTree = "<group>"; };
+		F51C38D82C775CEC003B4EB3 /* NfcReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NfcReader.swift; sourceTree = "<group>"; };
+		F51C38DA2C775D0B003B4EB3 /* GooseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooseView.swift; sourceTree = "<group>"; };
+		F51C38E02C77DADA003B4EB3 /* ProfileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileManager.swift; sourceTree = "<group>"; };
+		F51C38E72C78ADB5003B4EB3 /* ProfilePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePicker.swift; sourceTree = "<group>"; };
+		F51C38E92C78B47A003B4EB3 /* ProfileFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFormView.swift; sourceTree = "<group>"; };
+		F5A3B05B2C733E3400BD6C7F /* Goose.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Goose.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5A3B05E2C733E3400BD6C7F /* GooseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GooseApp.swift; sourceTree = "<group>"; };
+		F5A3B0622C733E3500BD6C7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F5A3B0652C733E3500BD6C7F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F5A3B06C2C733EA200BD6C7F /* Goose.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Goose.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		25DF3A3D306AF1DA002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 25DF3A2C306AF1DA002CBBD8 /* GooseShield */;
+		};
+		25DF3A59306B06FB002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 25DF3A42306B06FA002CBBD8 /* GooseWidgetExtension */;
+		};
+		25DF3B053075CF82002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = 25DF3AF73075CF82002CBBD8 /* GooseMonitor */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		25DF3A32306AF1DA002CBBD8 /* GooseShield */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (25DF3A3D306AF1DA002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = GooseShield; sourceTree = "<group>"; };
+		25DF3A48306B06FA002CBBD8 /* GooseWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (25DF3A59306B06FB002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = GooseWidget; sourceTree = "<group>"; };
+		25DF3AFB3075CF82002CBBD8 /* GooseMonitor */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (25DF3B053075CF82002CBBD8 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = GooseMonitor; sourceTree = "<group>"; };
+		AA0000000000000000000021 /* GooseTests */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = GooseTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		25DF3A2A306AF1DA002CBBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF3A2F306AF1DA002CBBD8 /* ManagedSettings.framework in Frameworks */,
+				25DF3A31306AF1DA002CBBD8 /* ManagedSettingsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3A40306B06FA002CBBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF3A47306B06FA002CBBD8 /* SwiftUI.framework in Frameworks */,
+				25DF3A45306B06FA002CBBD8 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3AF53075CF82002CBBD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25DF3AFA3075CF82002CBBD8 /* DeviceActivity.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000024 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A3B0582C733E3400BD6C7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51C38D22C775953003B4EB3 /* CoreNFC.framework in Frameworks */,
+				F51C38E42C77E847003B4EB3 /* SFSymbolsPicker in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000001 /* GooseShared.swift */,
+				AA0000000000000000000B06 /* BlockRules.swift */,
+				AA0000000000000000000044 /* GooseIntents.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000011 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000010 /* Goose.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		AA000000000000000000005A /* Bundled Documents */ = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000054 /* LICENSE */,
+				AA0000000000000000000056 /* guide.md */,
+				AA0000000000000000000058 /* privacy.md */,
+			);
+			name = "Bundled Documents";
+			sourceTree = "<group>";
+		};
+		F51C38CF2C77594E003B4EB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F51C38D02C77594E003B4EB3 /* CoreNFC.framework */,
+				25DF3A2E306AF1DA002CBBD8 /* ManagedSettings.framework */,
+				25DF3A30306AF1DA002CBBD8 /* ManagedSettingsUI.framework */,
+				25DF3A44306B06FA002CBBD8 /* WidgetKit.framework */,
+				25DF3A46306B06FA002CBBD8 /* SwiftUI.framework */,
+				25DF3AF93075CF82002CBBD8 /* DeviceActivity.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F5A3B0522C733E3400BD6C7F = {
+			isa = PBXGroup;
+			children = (
+				25DF3A5D306B0707002CBBD8 /* GooseWidgetExtension.entitlements */,
+				AA0000000000000000000011 /* Config */,
+				F5A3B05D2C733E3400BD6C7F /* Goose */,
+				AA0000000000000000000002 /* Shared */,
+				25DF3A32306AF1DA002CBBD8 /* GooseShield */,
+				25DF3A48306B06FA002CBBD8 /* GooseWidget */,
+				AA0000000000000000000021 /* GooseTests */,
+				25DF3AFB3075CF82002CBBD8 /* GooseMonitor */,
+				F5A3B05C2C733E3400BD6C7F /* Products */,
+				F51C38CF2C77594E003B4EB3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F5A3B05C2C733E3400BD6C7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3B05B2C733E3400BD6C7F /* Goose.app */,
+				25DF3A2D306AF1DA002CBBD8 /* GooseShield.appex */,
+				25DF3A43306B06FA002CBBD8 /* GooseWidgetExtension.appex */,
+				AA0000000000000000000020 /* GooseTests.xctest */,
+				25DF3AF83075CF82002CBBD8 /* GooseMonitor.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F5A3B05D2C733E3400BD6C7F /* Goose */ = {
+			isa = PBXGroup;
+			children = (
+				F51C38D52C775AAF003B4EB3 /* Info.plist */,
+				AA0000000000000000000B04 /* StatsView.swift */,
+				AA0000000000000000000B02 /* RulesViews.swift */,
+				AA0000000000000000000B00 /* BlockRulesManager.swift */,
+				AA0000000000000000000072 /* QuotesSettingsView.swift */,
+				AA0000000000000000000070 /* AddTagSheet.swift */,
+				AA000000000000000000005A /* Bundled Documents */,
+				AA0000000000000000000052 /* AboutContent.swift */,
+				AA0000000000000000000050 /* InfoView.swift */,
+				AA0000000000000000000042 /* OnboardingView.swift */,
+				AA0000000000000000000040 /* QRCode.swift */,
+				AA0000000000000000000030 /* PrivacyInfo.xcprivacy */,
+				F5A3B06C2C733EA200BD6C7F /* Goose.entitlements */,
+				F51C38E02C77DADA003B4EB3 /* ProfileManager.swift */,
+				F51C38E72C78ADB5003B4EB3 /* ProfilePicker.swift */,
+				F5A3B05E2C733E3400BD6C7F /* GooseApp.swift */,
+				F51C38DA2C775D0B003B4EB3 /* GooseView.swift */,
+				F51C38D82C775CEC003B4EB3 /* NfcReader.swift */,
+				F51C38D62C775CAF003B4EB3 /* AppBlocker.swift */,
+				F5A3B0622C733E3500BD6C7F /* Assets.xcassets */,
+				F5A3B0642C733E3500BD6C7F /* Preview Content */,
+				F51C38E92C78B47A003B4EB3 /* ProfileFormView.swift */,
+			);
+			path = Goose;
+			sourceTree = "<group>";
+		};
+		F5A3B0642C733E3500BD6C7F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F5A3B0652C733E3500BD6C7F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25DF3A2C306AF1DA002CBBD8 /* GooseShield */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DF3A3E306AF1DA002CBBD8 /* Build configuration list for PBXNativeTarget "GooseShield" */;
+			buildPhases = (
+				25DF3A29306AF1DA002CBBD8 /* Sources */,
+				25DF3A2A306AF1DA002CBBD8 /* Frameworks */,
+				25DF3A2B306AF1DA002CBBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25DF3A32306AF1DA002CBBD8 /* GooseShield */,
+			);
+			name = GooseShield;
+			packageProductDependencies = (
+			);
+			productName = GooseShield;
+			productReference = 25DF3A2D306AF1DA002CBBD8 /* GooseShield.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		25DF3A42306B06FA002CBBD8 /* GooseWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DF3A5A306B06FB002CBBD8 /* Build configuration list for PBXNativeTarget "GooseWidgetExtension" */;
+			buildPhases = (
+				25DF3A3F306B06FA002CBBD8 /* Sources */,
+				25DF3A40306B06FA002CBBD8 /* Frameworks */,
+				25DF3A41306B06FA002CBBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25DF3A48306B06FA002CBBD8 /* GooseWidget */,
+			);
+			name = GooseWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = GooseWidgetExtension;
+			productReference = 25DF3A43306B06FA002CBBD8 /* GooseWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		25DF3AF73075CF82002CBBD8 /* GooseMonitor */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 25DF3B063075CF82002CBBD8 /* Build configuration list for PBXNativeTarget "GooseMonitor" */;
+			buildPhases = (
+				25DF3AF43075CF82002CBBD8 /* Sources */,
+				25DF3AF53075CF82002CBBD8 /* Frameworks */,
+				25DF3AF63075CF82002CBBD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				25DF3AFB3075CF82002CBBD8 /* GooseMonitor */,
+			);
+			name = GooseMonitor;
+			packageProductDependencies = (
+			);
+			productName = GooseMonitor;
+			productReference = 25DF3AF83075CF82002CBBD8 /* GooseMonitor.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		AA0000000000000000000022 /* GooseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA0000000000000000000028 /* Build configuration list for PBXNativeTarget "GooseTests" */;
+			buildPhases = (
+				AA0000000000000000000023 /* Sources */,
+				AA0000000000000000000024 /* Frameworks */,
+				AA0000000000000000000025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AA0000000000000000000027 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AA0000000000000000000021 /* GooseTests */,
+			);
+			name = GooseTests;
+			packageProductDependencies = (
+			);
+			productName = GooseTests;
+			productReference = AA0000000000000000000020 /* GooseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F5A3B05A2C733E3400BD6C7F /* Goose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F5A3B0692C733E3500BD6C7F /* Build configuration list for PBXNativeTarget "Goose" */;
+			buildPhases = (
+				F5A3B0572C733E3400BD6C7F /* Sources */,
+				F5A3B0582C733E3400BD6C7F /* Frameworks */,
+				F5A3B0592C733E3400BD6C7F /* Resources */,
+				25DF3A3A306AF1DA002CBBD8 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				25DF3A38306AF1DA002CBBD8 /* PBXTargetDependency */,
+				25DF3A57306B06FB002CBBD8 /* PBXTargetDependency */,
+				25DF3B013075CF82002CBBD8 /* PBXTargetDependency */,
+			);
+			name = Goose;
+			packageProductDependencies = (
+				F51C38E32C77E847003B4EB3 /* SFSymbolsPicker */,
+			);
+			productName = Goose;
+			productReference = F5A3B05B2C733E3400BD6C7F /* Goose.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F5A3B0532C733E3400BD6C7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2660;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					25DF3A2C306AF1DA002CBBD8 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					25DF3A42306B06FA002CBBD8 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					25DF3AF73075CF82002CBBD8 = {
+						CreatedOnToolsVersion = 26.6;
+					};
+					AA0000000000000000000022 = {
+						CreatedOnToolsVersion = 26.6;
+						TestTargetID = F5A3B05A2C733E3400BD6C7F;
+					};
+					F5A3B05A2C733E3400BD6C7F = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F5A3B0562C733E3400BD6C7F /* Build configuration list for PBXProject "Goose" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F5A3B0522C733E3400BD6C7F;
+			packageReferences = (
+				F51C38E22C77E847003B4EB3 /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */,
+			);
+			productRefGroup = F5A3B05C2C733E3400BD6C7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F5A3B05A2C733E3400BD6C7F /* Goose */,
+				25DF3A2C306AF1DA002CBBD8 /* GooseShield */,
+				25DF3A42306B06FA002CBBD8 /* GooseWidgetExtension */,
+				AA0000000000000000000022 /* GooseTests */,
+				25DF3AF73075CF82002CBBD8 /* GooseMonitor */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		25DF3A2B306AF1DA002CBBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3A41306B06FA002CBBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3AF63075CF82002CBBD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A3B0592C733E3400BD6C7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000059 /* privacy.md in Resources */,
+				AA0000000000000000000057 /* guide.md in Resources */,
+				AA0000000000000000000055 /* LICENSE in Resources */,
+				AA0000000000000000000031 /* PrivacyInfo.xcprivacy in Resources */,
+				F5A3B0662C733E3500BD6C7F /* Preview Assets.xcassets in Resources */,
+				F5A3B0632C733E3500BD6C7F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		25DF3A29306AF1DA002CBBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3A3F306B06FA002CBBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000004 /* GooseShared.swift in Sources */,
+				AA0000000000000000000046 /* GooseIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25DF3AF43075CF82002CBBD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000B08 /* BlockRules.swift in Sources */,
+				AA0000000000000000000060 /* GooseShared.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AA0000000000000000000023 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5A3B0572C733E3400BD6C7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F51C38EA2C78B47A003B4EB3 /* ProfileFormView.swift in Sources */,
+				F51C38DB2C775D0B003B4EB3 /* GooseView.swift in Sources */,
+				F51C38D92C775CEC003B4EB3 /* NfcReader.swift in Sources */,
+				F51C38E12C77DADA003B4EB3 /* ProfileManager.swift in Sources */,
+				F5A3B05F2C733E3400BD6C7F /* GooseApp.swift in Sources */,
+				F51C38E82C78ADB5003B4EB3 /* ProfilePicker.swift in Sources */,
+				F51C38D72C775CAF003B4EB3 /* AppBlocker.swift in Sources */,
+				AA0000000000000000000B07 /* BlockRules.swift in Sources */,
+				AA0000000000000000000B05 /* StatsView.swift in Sources */,
+				AA0000000000000000000B03 /* RulesViews.swift in Sources */,
+				AA0000000000000000000B01 /* BlockRulesManager.swift in Sources */,
+				AA0000000000000000000073 /* QuotesSettingsView.swift in Sources */,
+				AA0000000000000000000071 /* AddTagSheet.swift in Sources */,
+				AA0000000000000000000053 /* AboutContent.swift in Sources */,
+				AA0000000000000000000051 /* InfoView.swift in Sources */,
+				AA0000000000000000000043 /* OnboardingView.swift in Sources */,
+				AA0000000000000000000041 /* QRCode.swift in Sources */,
+				AA0000000000000000000003 /* GooseShared.swift in Sources */,
+				AA0000000000000000000045 /* GooseIntents.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25DF3A38306AF1DA002CBBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25DF3A2C306AF1DA002CBBD8 /* GooseShield */;
+			targetProxy = 25DF3A37306AF1DA002CBBD8 /* PBXContainerItemProxy */;
+		};
+		25DF3A57306B06FB002CBBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25DF3A42306B06FA002CBBD8 /* GooseWidgetExtension */;
+			targetProxy = 25DF3A56306B06FB002CBBD8 /* PBXContainerItemProxy */;
+		};
+		25DF3B013075CF82002CBBD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25DF3AF73075CF82002CBBD8 /* GooseMonitor */;
+			targetProxy = 25DF3B003075CF82002CBBD8 /* PBXContainerItemProxy */;
+		};
+		AA0000000000000000000027 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F5A3B05A2C733E3400BD6C7F /* Goose */;
+			targetProxy = AA0000000000000000000026 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		25DF3A3B306AF1DA002CBBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = GooseShield/GooseShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseShield";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		25DF3A3C306AF1DA002CBBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = GooseShield/GooseShield.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseShield/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseShield;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseShield";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		25DF3A5B306B06FB002CBBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GooseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		25DF3A5C306B06FB002CBBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = GooseWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseWidget";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		25DF3B033075CF82002CBBD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = GooseMonitor/GooseMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		25DF3B043075CF82002CBBD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_ENTITLEMENTS = GooseMonitor/GooseMonitor.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = GooseMonitor/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = GooseMonitor;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseMonitor";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		AA0000000000000000000029 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goose.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Goose";
+			};
+			name = Debug;
+		};
+		AA000000000000000000002A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID).GooseTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Goose.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Goose";
+			};
+			name = Release;
+		};
+		F5A3B0672C733E3500BD6C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0000000000000000000010 /* Goose.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F5A3B0682C733E3500BD6C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA0000000000000000000010 /* Goose.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F5A3B06A2C733E3500BD6C7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Goose/Goose.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Goose/Preview Content\"";
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goose/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Goose;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F5A3B06B2C733E3500BD6C7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Goose/Goose.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Goose/Preview Content\"";
+				DEVELOPMENT_TEAM = "$(GOOSE_TEAM_ID)";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Goose/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Goose;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "$(GOOSE_BUNDLE_ID)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		25DF3A3E306AF1DA002CBBD8 /* Build configuration list for PBXNativeTarget "GooseShield" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DF3A3B306AF1DA002CBBD8 /* Debug */,
+				25DF3A3C306AF1DA002CBBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DF3A5A306B06FB002CBBD8 /* Build configuration list for PBXNativeTarget "GooseWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DF3A5B306B06FB002CBBD8 /* Debug */,
+				25DF3A5C306B06FB002CBBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		25DF3B063075CF82002CBBD8 /* Build configuration list for PBXNativeTarget "GooseMonitor" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25DF3B033075CF82002CBBD8 /* Debug */,
+				25DF3B043075CF82002CBBD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA0000000000000000000028 /* Build configuration list for PBXNativeTarget "GooseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA0000000000000000000029 /* Debug */,
+				AA000000000000000000002A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A3B0562C733E3400BD6C7F /* Build configuration list for PBXProject "Goose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A3B0672C733E3500BD6C7F /* Debug */,
+				F5A3B0682C733E3500BD6C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F5A3B0692C733E3500BD6C7F /* Build configuration list for PBXNativeTarget "Goose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F5A3B06A2C733E3500BD6C7F /* Debug */,
+				F5A3B06B2C733E3500BD6C7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F51C38E22C77E847003B4EB3 /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alessiorubicini/SFSymbolsPicker";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.6;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F51C38E32C77E847003B4EB3 /* SFSymbolsPicker */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F51C38E22C77E847003B4EB3 /* XCRemoteSwiftPackageReference "SFSymbolsPicker" */;
+			productName = SFSymbolsPicker;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = F5A3B0532C733E3400BD6C7F /* Project object */;
+}

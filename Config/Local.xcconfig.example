@@ -1,0 +1,3 @@
+// Copy to Config/Local.xcconfig (git-ignored) and fill in your own values.
+GOOSE_TEAM_ID = ABCDE12345
+GOOSE_BUNDLE_ID = com.yourname.goose
